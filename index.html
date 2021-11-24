@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="calc" id="calc">
+        <div class="calc__elem calc__type" id="calc__type"><label><input type="radio" name="type" id="type-1"
+                    checked>Площадь/объем в массу</label><label><input type="radio" name="type" id="type-2">Масса в
+                площадь/объем</label></div>
+        <div class="calc__elem calc__var" id="calc__var"><label><input type="radio" name="variant" id="variant-1"
+                    checked>Расчет по площади, м<sup>2</sup></label><label><input type="radio" name="variant"
+                    id="variant-2">Расчет по объему, м<sup>3</sup></label></div>
+        <div class="calc__elem calc__input" id="calc__input">
+            <label>
+                <p>Площадь<b>*</b>, м<sup>2</sup></p><input type="text" name="square" id="square" value="20">
+            </label>
+            <label>
+                <p>Объем<b>*</b>, м<sup>3</sup> </p><input type="text" name="volume" id="volume" value="20">
+            </label>
+            <label>
+                <p>Масса<b>*</b>, кг</p><input type="text" name="mass" id="mass" value="20">
+            </label>
+            <label>
+                <p>Толщина слоя<b>*</b>, м</p><input type="text" name="thickness" id="thickness" value="1">
+            </label>
+            <label>
+                <p>Количество слоев<b>*</b>, шт</p><input type="text" name="number" id="number" value="1">
+            </label><label>
+                <p>Плотность насыпи<b>*</b>, кг/м<sup>3</sup></p><input type="text" name="density" id="density"
+                    value="1350">
+            </label>
+        </div>
+        <button class="calculate" id="calculate">Рассчитать</button>
+        <div class="calc__result" id="calc__result"></div>
+    </form>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>

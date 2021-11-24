@@ -1,0 +1,65 @@
+.calc {
+    font-family: sans-serif;
+    margin: 20px 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 1px 3px rgb(40 52 58 / 20%), 0 3px 15px rgb(40 52 58 / 7%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+}
+.calc .calc__elem {
+margin-bottom: 25px;
+}
+.calc button, .calc input {
+font-size: inherit;
+}
+.calc .calc__type, .calc .calc__var {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.calc .calc__type label:first-child, .calc .calc__var label:first-child{
+margin-bottom: 10px;
+}
+.calc .calc__type input, .calc .calc__var input {
+margin-right: 10px;
+}
+.calc .calc__input label {
+display: flex;
+flex-wrap: wrap;
+}
+.calc .calc__input label b {
+color: red;
+}
+.calc .calc__input p {
+min-width: 300px;
+margin-bottom: 15px;
+}
+.calc .calc__input input {
+margin-bottom: 25px;
+}
+
+.calc .calculate {
+cursor: pointer;
+padding: 15px 45px;
+background-image: linear-gradient(to bottom,rgb(255, 225, 0),rgb(255, 174, 0));
+font-weight: bold;
+border-radius: 3px;
+border: none;
+margin-bottom: 50px;
+}
+.calc .calculate:hover {
+background-image: linear-gradient(to bottom,rgba(255, 225, 0, 0.5),rgba(255, 174, 0, 0.5));
+}
+.calc .calculate:active, .calc .calculate:focus{
+outline: none;
+}
+.calc .calc__result {
+font-weight: bold;
+font-size: 28px;
+margin-bottom: 25px;
+color: #2d647f;
+}
